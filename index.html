@@ -4,6 +4,7 @@
 <head>
     <script src="budget.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
 
 </head>
 
@@ -12,24 +13,49 @@
 <div class="jumbotron text-center">
     <h1>What are your expenses?</h1>
     <h3>First, we'll figure out your monthly expenses, then we'll get an estimated monthly income and come up with a monthly budget.</h3>
-    <div ng-app>
-        <h2>Calculator</h2>
+    <!--  <div ng-app>
+         <h2>Calculator</h2>
 
-        <div ng-controller="budgetController">
-            <form>
-                <li>Rent: <input type="number" ng-model="rent"/> </li>
-                <li>Utilities: <input type="number" ng-model="utilities"/> </li>
-                <li>Auto Payment<input type="number" ng-model="autoPayment"/>  </li>
+         <div ng-controller="budgetController">
+             <form>
+                 <li>Rent: <input type="number" ng-model="rent"/> </li>
+                 <li>Utilities: <input type="number" ng-model="utilities"/> </li>
+                 <li>Auto Payment<input type="number" ng-model="autoPayment"/>  </li>
 
-                <li><b>Total Expenses</b><input type="number" value="{{totalExpenses()}}"/>
-                </li>
-                <li>Income<input type="number" ng-model="income"/>  </li>
+                 <li><b>Total Expenses</b><input type="number" value="{{totalExpenses()}}"/>
+                 </li>
+                 <li>Income<input type="number" ng-model="income"/>  </li>
 
-                <li><b>Surplus or Deficit</b><input type="number" value="{{difference()}}"/>  </li>
-            </form>
-        </div>
+                 <li><b>Surplus or Deficit</b><input type="number" value="{{difference()}}"/>  </li>
+             </form>
+         </div>
+     </div>
     </div>
-   </div>
+ </body>
+
+ </html> -->
+
+<!-- testing -->
+
+<div ng-app>
+    <h2>Calculator</h2>
+
+    <div ng-controller="budgetController">
+        <form>
+            <div> <label>Rent:</label> <input type="number" ng-model="rent"/></div>
+            <div><label>Utilities:</label> <input type="number" ng-model="utilities"/></div>
+            <div><label>Auto Payment</label><input type="number" ng-model="autoPayment"/></div>
+
+            <div> <label><b>Total Expenses</b> </label><input type="number" value="{{totalExpenses()}}"/></div>
+
+            <div><label>Income</label><input type="number" ng-model="income"/></div>
+
+            <div><label><b>Surplus or Deficit</b></label><input type="number" value="{{difference()}}"/></div>
+        </form>
+    </div>
+</div>
+</div>
+
 </body>
 
 </html>
