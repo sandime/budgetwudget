@@ -1,7 +1,7 @@
 /**
  * Created by SHERRI on 3/19/15.
  */
-function TestCtrl($scope) {
+function budgetController($scope) {
 
     $scope.totalExpenses = function(){
         var rent = $scope.rent;
