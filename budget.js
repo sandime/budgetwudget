@@ -3,23 +3,18 @@
  */
 function TestCtrl($scope) {
 
-
     $scope.totalExpenses = function(){
         var rent = $scope.rent;
         var utilities = $scope.utilities;
         var autoPayment = $scope.autoPayment;
-
-
         return rent + utilities + autoPayment;
-    }
+    };
 
 
     $scope.difference = function(){
-        var income = $scope.income();
-
-
+        var income = $scope.income;
         return income + totalExpenses;
+    };
 
-    }
 
 }
