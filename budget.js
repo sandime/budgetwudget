@@ -12,6 +12,7 @@ function TestCtrl($scope) {
 
 
     $scope.difference = function(){
+        var totalExpenses = $scope.totalExpenses ();
         var income = $scope.income;
         return income + totalExpenses;
     };
